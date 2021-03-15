@@ -1,0 +1,396 @@
+#cuprum {
+  background-color: #472E1E;
+  height: 40px;
+  width: 40px;
+}
+
+#fiol {
+  background-color: #1A1431;
+  height: 40px;
+  width: 40px;
+}
+
+#green {
+  background-color: #07281F;
+  height: 40px;
+  width: 40px;
+}
+
+body {
+  margin: 0;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  margin: 0;
+}
+
+p {
+  font-family: Georgia, "Times New Roman", Times, serif;
+}
+
+a {
+  text-decoration: none;
+}
+
+h1, h2 {
+  color: #EAE9E6;
+}
+
+.container {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+section {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 500px;
+}
+
+.header {
+  height: 50px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 100;
+  width: 100%;
+  background-color: #07281F;
+  border-bottom: 4px solid #D3CFCF;
+}
+.header h3 {
+  font-weight: normal;
+  margin-top: 15px;
+}
+
+.header_inner {
+  display: flex;
+  justify-content: space-between;
+  align-items: stretch;
+}
+
+.logo {
+  margin-top: 5px;
+  height: 40px;
+}
+
+.nav_link {
+  color: #EAE9E6;
+  text-transform: uppercase;
+  vertical-align: top;
+}
+
+.link {
+  display: inline-block;
+  height: 100%;
+  padding: 0 15px;
+}
+
+.link:hover {
+  background: rgba(0, 0, 0, 0.3);
+}
+
+.phone_number {
+  font-weight: normal;
+  font-size: 25px;
+  margin-top: 12px;
+}
+
+#first {
+  height: 600px;
+}
+#first h1 {
+  font-size: 35px;
+}
+#first h2 {
+  font-size: 25px;
+  margin-top: 10px;
+}
+#first h1, #first h2 {
+  text-shadow: 2px 2px 2px #000;
+}
+
+.promo {
+  position: relative;
+  display: block;
+  width: 100%;
+  height: auto;
+  margin: 0 auto;
+  padding: 0 0 100px;
+}
+
+.bgmain {
+  background-image: url(../img/bg.main.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.bgmain * {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.main_logo {
+  height: 120px;
+  width: 200px;
+  padding-top: 250px;
+}
+
+#first2 {
+  text-align: center;
+}
+#first2 h2 {
+  color: black;
+}
+#first2 h3 {
+  margin-top: 30px;
+}
+#first2 p {
+  text-align: left;
+  margin-left: 200px;
+}
+#first2 h4 {
+  margin-top: 20px;
+}
+
+.border_photo {
+  width: 100%;
+}
+
+#second h2 {
+  color: black;
+}
+
+.text_block {
+  height: 100%;
+  width: 600px;
+  background-color: #F9F9EF;
+}
+.text_block h2 {
+  margin-top: 50px;
+  margin-left: 20px;
+}
+.text_block p {
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+#first_foto {
+  background: url(../img/first_foto.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.foto {
+  height: 100%;
+  width: 600px;
+  -webkit-transition: all 0.5s ease-out;
+}
+
+.foto:hover {
+  -webkit-transform: scale(1.02);
+}
+
+.block {
+  overflow: hidden;
+  height: 100%;
+}
+
+#second_foto {
+  background: url(../img/2_foto.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+#third_foto {
+  background: url(../img/3_foto.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+#fourth {
+  overflow: hidden;
+}
+
+#fourth_foto {
+  background: url(../img/4_foto.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  width: 100%;
+}
+
+#fifth_foto {
+  background: url(../img/5_foto.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+#sixth_foto {
+  background: url(../img/6_foto.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+#sixth {
+  overflow: hidden;
+}
+
+#seventh_foto {
+  background: url(../img/7_foto.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  width: 100%;
+}
+
+#eighth_foto {
+  background: url(../img/8_foto.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+#ninth_foto {
+  background: url(../img/9_foto.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+#foto_10 {
+  background: url(../img/10_foto.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+#foto_11 {
+  background: url(../img/11_foto.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+#eighth {
+  border-top: 2px solid #D3CFCF;
+  background-color: #07281F;
+  height: 100px;
+  vertical-align: top;
+}
+#eighth div {
+  text-align: center;
+}
+#eighth h2 {
+  margin-top: 20px;
+}
+#eighth button {
+  margin-top: 30px;
+  width: 120px;
+}
+
+.mini_inst_logo {
+  height: 50px;
+}
+
+#contacts {
+  border-top: 2px solid #D3CFCF;
+  height: 200px;
+  background-color: #07281F;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: normal;
+}
+#contacts h3 {
+  color: #EAE9E6;
+}
+
+.contacts_1_block {
+  width: 400px;
+  padding-right: 20px;
+  height: 100%;
+  text-align: center;
+}
+
+.mini_logo {
+  height: 70px;
+  margin-top: 50px;
+}
+
+.contacts_2_block {
+  width: 800px;
+  padding-right: 20px;
+  height: 100%;
+  text-align: center;
+}
+.contacts_2_block h3 {
+  margin-top: 50px;
+}
+.contacts_2_block p {
+  color: #EAE9E6;
+  font-size: 15px;
+}
+
+.phone_input {
+  margin-top: 10px;
+  border: 2px solid #D3CFCF;
+  background-color: #07281F;
+  padding: 10px;
+  color: #EAE9E6;
+}
+
+.send {
+  display: inline-block;
+  color: #EAE9E6;
+  font-weight: 700;
+  text-decoration: none;
+  -webkit-user-select: none;
+          user-select: none;
+  transition: 0.2s;
+  height: 40px;
+  width: 100px;
+  margin-left: 20px;
+  background-color: #07281F;
+  border: 2px solid #D3CFCF;
+}
+
+.send:hover {
+  background-color: #68432C;
+}
+
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.contacts2 {
+  height: 200px;
+  background-color: #07281F;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: normal;
+}
+.contacts2 h3 {
+  color: #EAE9E6;
+  margin-top: 20px;
+}
+.contacts2 p {
+  color: #EAE9E6;
+}
+
+.contacts2_ikons {
+  height: 40px;
+  margin-top: 10px;
+}
