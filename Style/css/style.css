@@ -1,31 +1,25 @@
-#cuprum {
-  background-color: #472E1E;
-  height: 40px;
-  width: 40px;
+@font-face {
+  font-family: MullerMedium;
+  src: url(../fonts/MullerMedium.otf);
 }
-
-#fiol {
-  background-color: #1A1431;
-  height: 40px;
-  width: 40px;
+@font-face {
+  font-family: MullerBold;
+  src: url(../fonts/MullerBold_1.otf);
 }
-
-#green {
-  background-color: #07281F;
-  height: 40px;
-  width: 40px;
-}
-
 body {
   margin: 0;
+  box-shadow: 10px 10px 10px black;
 }
 
 h1, h2, h3, h4, h5, h6 {
   margin: 0;
+  font-family: MullerBold;
+  font-weight: 600;
 }
 
 p {
-  font-family: Georgia, "Times New Roman", Times, serif;
+  font-family: MullerBold;
+  font-weight: normal;
 }
 
 a {
@@ -33,12 +27,12 @@ a {
 }
 
 h1, h2 {
-  color: #EAE9E6;
+  color: #1A1431;
 }
 
 .container {
   width: 100%;
-  max-width: 1200px;
+  max-width: 1440px;
   margin: 0 auto;
 }
 
@@ -50,35 +44,37 @@ section {
 }
 
 .header {
-  height: 50px;
+  height: 60px;
   position: fixed;
   top: 0;
   left: 0;
   right: 0;
   z-index: 100;
   width: 100%;
-  background-color: #07281F;
-  border-bottom: 4px solid #D3CFCF;
+  background: linear-gradient(45deg, #dbdbda 0%, #6f6c79 51%, #e4e4e6 100%);
+  border-bottom: 4px solid #1A1431;
 }
 .header h3 {
   font-weight: normal;
-  margin-top: 15px;
+  margin-top: 20px;
 }
 
 .header_inner {
+  height: 100%;
   display: flex;
   justify-content: space-between;
   align-items: stretch;
 }
 
 .logo {
-  margin-top: 5px;
+  margin-left: 20px;
+  margin-right: 20px;
+  margin-top: 10px;
   height: 40px;
 }
 
 .nav_link {
-  color: #EAE9E6;
-  text-transform: uppercase;
+  color: #1A1431;
   vertical-align: top;
 }
 
@@ -86,30 +82,45 @@ section {
   display: inline-block;
   height: 100%;
   padding: 0 15px;
+  font-family: MullerBold;
+  font-size: 15px;
 }
 
 .link:hover {
-  background: rgba(0, 0, 0, 0.3);
+  background: rgba(0, 0, 0, 0.1);
 }
 
 .phone_number {
-  font-weight: normal;
+  margin-right: 50px;
+}
+.phone_number h4 {
+  font-family: MullerBold;
   font-size: 25px;
-  margin-top: 12px;
+  margin-top: 15px;
+  color: white;
+}
+
+.header_right {
+  background-color: #1A1431;
 }
 
 #first {
   height: 600px;
 }
 #first h1 {
-  font-size: 35px;
-}
-#first h2 {
-  font-size: 25px;
+  font-size: 40px;
+  font-family: MullerMedium;
+  font-weight: 100;
+  letter-spacing: 30px;
   margin-top: 10px;
 }
-#first h1, #first h2 {
-  text-shadow: 2px 2px 2px #000;
+#first h2 {
+  font-size: 20px;
+  margin-top: 10px;
+  font-family: MullerMedium;
+  font-weight: bold;
+  letter-spacing: 5px;
+  margin-top: 30px;
 }
 
 .promo {
@@ -122,12 +133,22 @@ section {
 }
 
 .bgmain {
-  background-image: url(../img/bg.main.jpg);
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
+  background: linear-gradient(45deg, #dbdbda 0%, #6f6c79 51%, #e4e4e6 100%);
+  background-size: 200% 200%;
+  animation: gradient 20s ease infinite;
 }
 
+@keyframes gradient {
+  0% {
+    background-position: 0 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0 50%;
+  }
+}
 .bgmain * {
   display: flex;
   align-items: center;
@@ -135,40 +156,54 @@ section {
 }
 
 .main_logo {
-  height: 120px;
+  height: 150px;
   width: 200px;
-  padding-top: 250px;
+  padding-top: 200px;
 }
 
 #first2 {
+  border-top: solid 2px #1A1431;
+  border-bottom: solid 2px #1A1431;
   text-align: center;
 }
 #first2 h2 {
   color: black;
+  text-align: left;
+  margin-left: 50px;
 }
 #first2 h3 {
   margin-top: 30px;
+  margin-left: 60px;
 }
 #first2 p {
-  text-align: left;
-  margin-left: 200px;
+  margin-left: 80px;
 }
 #first2 h4 {
   margin-top: 20px;
 }
 
-.border_photo {
+.flex {
+  display: flex;
   width: 100%;
 }
 
+.flex_block {
+  width: 720px;
+  text-align: left;
+}
+
+#present {
+  margin-left: 100px;
+}
+
 #second h2 {
-  color: black;
+  color: #1A1431;
+  font-weight: 500;
 }
 
 .text_block {
   height: 100%;
-  width: 600px;
-  background-color: #F9F9EF;
+  width: 720px;
 }
 .text_block h2 {
   margin-top: 50px;
@@ -188,7 +223,7 @@ section {
 
 .foto {
   height: 100%;
-  width: 600px;
+  width: 720px;
   -webkit-transition: all 0.5s ease-out;
 }
 
@@ -281,38 +316,17 @@ section {
   background-size: cover;
 }
 
-#eighth {
-  border-top: 2px solid #D3CFCF;
-  background-color: #07281F;
-  height: 100px;
-  vertical-align: top;
-}
-#eighth div {
-  text-align: center;
-}
-#eighth h2 {
-  margin-top: 20px;
-}
-#eighth button {
-  margin-top: 30px;
-  width: 120px;
-}
-
-.mini_inst_logo {
-  height: 50px;
-}
-
 #contacts {
-  border-top: 2px solid #D3CFCF;
-  height: 200px;
-  background-color: #07281F;
-  display: flex;
+  border-top: 2px solid #1A1431;
+  height: 400px;
+  display: block;
   align-items: center;
   justify-content: center;
   font-weight: normal;
+  background: linear-gradient(45deg, #dbdbda 0%, #6f6c79 51%, #e4e4e6 100%);
 }
 #contacts h3 {
-  color: #EAE9E6;
+  color: #1A1431;
 }
 
 .contacts_1_block {
@@ -337,21 +351,21 @@ section {
   margin-top: 50px;
 }
 .contacts_2_block p {
-  color: #EAE9E6;
+  color: #1A1431;
   font-size: 15px;
 }
 
 .phone_input {
   margin-top: 10px;
-  border: 2px solid #D3CFCF;
-  background-color: #07281F;
+  border: 2px solid #1A1431;
+  background-color: linear-gradient(45deg, #dbdbda 0%, #6f6c79 51%, #e4e4e6 100%);
   padding: 10px;
-  color: #EAE9E6;
+  color: #1A1431;
 }
 
 .send {
   display: inline-block;
-  color: #EAE9E6;
+  color: #1A1431;
   font-weight: 700;
   text-decoration: none;
   -webkit-user-select: none;
@@ -360,12 +374,12 @@ section {
   height: 40px;
   width: 100px;
   margin-left: 20px;
-  background-color: #07281F;
-  border: 2px solid #D3CFCF;
+  background-color: linear-gradient(45deg, #dbdbda 0%, #6f6c79 51%, #e4e4e6 100%);
+  border: 2px solid #1A1431;
 }
 
 .send:hover {
-  background-color: #68432C;
+  background-color: #c0c0c0;
 }
 
 input[type=number]::-webkit-inner-spin-button,
@@ -376,21 +390,32 @@ input[type=number]::-webkit-outer-spin-button {
 
 .contacts2 {
   height: 200px;
-  background-color: #07281F;
+  background: linear-gradient(45deg, #dbdbda 0%, #6f6c79 51%, #e4e4e6 100%);
   display: flex;
   align-items: center;
   justify-content: center;
   font-weight: normal;
 }
 .contacts2 h3 {
-  color: #EAE9E6;
+  color: #1A1431;
   margin-top: 20px;
 }
 .contacts2 p {
-  color: #EAE9E6;
+  color: #1A1431;
 }
 
 .contacts2_ikons {
   height: 40px;
   margin-top: 10px;
+}
+
+#contacts_1 {
+  display: flex;
+  width: 100%;
+}
+
+#contacts_2 {
+  margin-top: 20px;
+  display: flex;
+  width: 100%;
 }

@@ -21,20 +21,32 @@ AOS.init({
   
   });
 
-  const anchors = document.querySelectorAll('a[href^="#"]')
+  const anchors = document.querySelectorAll('a[href^="#"]');
 
   // Цикл по всем ссылкам
   for(let anchor of anchors) {
     anchor.addEventListener("click", function(e) {
-      e.preventDefault() // Предотвратить стандартное поведение ссылок
+      e.preventDefault() ;// Предотвратить стандартное поведение ссылок
       // Атрибут href у ссылки, если его нет то перейти к body (наверх не плавно)
-      const goto = anchor.hasAttribute('href') ? anchor.getAttribute('href') : 'body'
+      const goto = anchor.hasAttribute('href') ? anchor.getAttribute('href') : 'body';
       // Плавная прокрутка до элемента с id = href у ссылки
       document.querySelector(goto).scrollIntoView({
         behavior: "smooth",
         block: "start"
-      })
-    })
+      });
+    });
   }
+
+
+  // Выбор цвета фона
+let colorPicker = document.getElementById("bgcolor");
+
+function changebodycolor(){
+  let colorVal = colorPicker.value;
+   document.header.style.background = colorVal;
+}
+
+colorPicker.addEventListener("change",
+changebodycolor,false);
 
  

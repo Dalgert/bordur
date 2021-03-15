@@ -1,33 +1,31 @@
 @import "vars.scss";
 
-//конпки для закных цветовых схем
+@font-face  {
+    font-family: MullerMedium;
+    src: url(../fonts/MullerMedium.otf);
+}
 
-#cuprum{
-    background-color: #472E1E;
-    height: 40px;
-    width: 40px;
+@font-face  {
+    font-family: MullerBold;
+    src: url(../fonts/MullerBold_1.otf);
 }
-#fiol{
-    background-color: #1A1431;
-    height: 40px;
-    width: 40px;
-}
-#green{
-    background-color: #07281F;
-    height: 40px;
-    width: 40px;
-}
+
 
 body {
     margin: 0;
+    box-shadow: 10px 10px 10px black;
 }
 
 h1, h2, h3, h4, h5, h6 {
     margin: 0;
+    font-family: MullerBold;
+    font-weight:  600 ;
+
 }
 
 p {
-    font-family: Georgia, 'Times New Roman', Times, serif
+    font-family: MullerBold;
+    font-weight: normal;
 }
 
 a {
@@ -40,7 +38,7 @@ h1, h2{
 
 .container {
     width: 100%;
-    max-width: 1200px;
+    max-width: 1440px;
     margin: 0 auto;
 }
 
@@ -54,7 +52,7 @@ section {
 // Шапка
 
 .header {
-    height: 50px;
+    height: 60px;
 
     position: fixed;
     top: 0;
@@ -62,30 +60,34 @@ section {
     right: 0;
     z-index: 100;
     width: 100%;
-    background-color: $header_bg_color;
+    
+    
+    background: $header_bg_color;
 
     border-bottom: 4px solid $header_border_color;
 
     h3 {
         font-weight: normal;
-        margin-top: 15px;
+        margin-top: 20px;
     }
 }
 
 .header_inner{
+    height: 100%;
     display: flex;
     justify-content: space-between;
     align-items: stretch;
 }
 
 .logo{
-    margin-top: 5px;
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-top: 10px;
     height: 40px;
 }
 
 .nav_link {
     color: $textColor;
-    text-transform: uppercase;
     vertical-align: top;
 }
 
@@ -93,16 +95,27 @@ section {
     display: inline-block;
     height: 100%;
     padding: 0 15px;
+    font-family: MullerBold;
+    font-size: 15px;
 }
 
 .link:hover {
-    background: rgba(0,0,0,.3);
+    background: rgba(0,0,0,.1);
 }
 
 .phone_number {
-    font-weight: normal;
-    font-size: 25px;
-    margin-top: 12px;
+margin-right: 50px;
+
+    h4{
+        font-family: MullerBold;
+        font-size: 25px;
+        margin-top: 15px;
+        color: white;
+    }
+}
+
+.header_right {
+    background-color: $header_border_color;
 }
 
 // Первый блок
@@ -111,15 +124,21 @@ section {
     height: 600px;
 
     h1{
-        font-size: 35px;
-    }
-    h2{
-        font-size: 25px;
+        font-size: 40px;
+        font-family: MullerMedium;
+        font-weight: 100;
+        letter-spacing: 30px;
         margin-top: 10px;
     }
-    h1, h2 {
-    text-shadow: 2px 2px 2px  #000;
+    h2{
+        font-size: 20px;
+        margin-top: 10px;
+        font-family: MullerMedium;
+        font-weight: bold;
+        letter-spacing: 5px;
+        margin-top: 30px;
     }
+    
 }
 
 .promo {
@@ -132,10 +151,23 @@ section {
 }
 
 .bgmain {
-    background-image: url(../img/bg.main.jpg) ;
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
+
+    
+    background: $header_bg_color;
+    background-size: 200% 200%;
+    animation: gradient 20s ease infinite;
+}
+
+@keyframes gradient {
+    0% {
+        background-position: 0 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0 50%;
+    }
 }
 
 .bgmain * {
@@ -145,31 +177,46 @@ section {
 }
 
 .main_logo {
-    height: 120px;
+    height: 150px;
     width: 200px;
-    padding-top: 250px;
+    padding-top: 200px;
 }
 
 #first2 {
+    border-top: solid 2px $header_border_color;
+    border-bottom: solid 2px $header_border_color;
+
     text-align: center;
     h2{
         color: black;
+        text-align: left;
+        margin-left: 50px;
     }
 
     h3{
         margin-top: 30px;
+        margin-left: 60px;
     }
     p{
-        text-align: left;
-        margin-left: 200px;
+        margin-left: 80px;
     }
     h4{
         margin-top: 20px;
     }
 }
 
-.border_photo {
+.flex {
+    display: flex;
     width: 100%;
+}
+
+.flex_block {
+    width: 720px;
+    text-align: left;
+}
+
+#present {
+    margin-left: 100px;
 }
 
 // Второй блок
@@ -177,15 +224,16 @@ section {
 #second {
 
     h2 {
-        color: $second_h2_color;
+        color: $textColor;
+        font-weight: 500;
     }
 }
 
+
 .text_block{
     height: 100%;
-    width: 600px;
+    width: 720px;
 
-    background-color: #F9F9EF;
 
     h2 {
         margin-top: 50px;
@@ -208,7 +256,7 @@ section {
 
 .foto{
     height: 100%;
-    width: 600px;
+    width: 720px;
     -webkit-transition: all 0.5s ease-out;
 }
 
@@ -313,41 +361,20 @@ section {
     background-size: cover;
 }
 
-// Восьмой блок
-
-#eighth {
-    border-top: 2px solid $header_border_color;
-    background-color: $header_bg_color;
-    height: 100px;
-    vertical-align: top;
-
-    div {
-        text-align: center;
-    }
-
-    h2 {
-        margin-top: 20px;
-    }
-    button {
-        margin-top: 30px;
-        width: 120px;
-    }
-}
-
-.mini_inst_logo {
-    height: 50px;
-}
 
 // Контакты блок
 
 #contacts {
     border-top: 2px solid $header_border_color;
-    height: 200px;
-    background-color: $header_bg_color;
-    display: flex;
+    height: 400px;
+    display: block;
     align-items: center;
     justify-content: center;
     font-weight: normal;
+
+    
+    background: $header_bg_color;
+
 
     h3 {
         color: $textColor;
@@ -407,7 +434,7 @@ section {
 }
 
 .send:hover {
-    background-color: #68432C;
+    background-color: $silver;
 }
 
 
@@ -423,7 +450,7 @@ input[type=number]::-webkit-outer-spin-button {
 
 .contacts2 {
     height: 200px;
-    background-color: $header_bg_color;
+    background: $header_bg_color;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -442,3 +469,15 @@ input[type=number]::-webkit-outer-spin-button {
     height: 40px;
     margin-top: 10px;
 }
+
+#contacts_1 {
+    display: flex;
+    width: 100%;
+}
+
+#contacts_2 {
+    margin-top: 20px;;
+    display: flex;
+    width: 100%;
+}
+
