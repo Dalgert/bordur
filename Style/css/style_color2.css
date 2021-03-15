@@ -57,7 +57,7 @@ section {
   right: 0;
   z-index: 100;
   width: 100%;
-  background-color: #1A1431;
+  background-color: #07281F;
   border-bottom: 4px solid #D3CFCF;
 }
 .header h3 {
@@ -283,7 +283,7 @@ section {
 
 #eighth {
   border-top: 2px solid #D3CFCF;
-  background-color: #1A1431;
+  background-color: #07281F;
   height: 100px;
   vertical-align: top;
 }
@@ -305,7 +305,7 @@ section {
 #contacts {
   border-top: 2px solid #D3CFCF;
   height: 200px;
-  background-color: #1A1431;
+  background-color: #07281F;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -344,7 +344,7 @@ section {
 .phone_input {
   margin-top: 10px;
   border: 2px solid #D3CFCF;
-  background-color: #1A1431;
+  background-color: #07281F;
   padding: 10px;
   color: #EAE9E6;
 }
@@ -360,7 +360,7 @@ section {
   height: 40px;
   width: 100px;
   margin-left: 20px;
-  background-color: #1A1431;
+  background-color: #07281F;
   border: 2px solid #D3CFCF;
 }
 
@@ -376,7 +376,7 @@ input[type=number]::-webkit-outer-spin-button {
 
 .contacts2 {
   height: 200px;
-  background-color: #1A1431;
+  background-color: #07281F;
   display: flex;
   align-items: center;
   justify-content: center;
